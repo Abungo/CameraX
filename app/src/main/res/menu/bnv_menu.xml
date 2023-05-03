@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/photo" android:enabled="true" android:icon="@drawable/photo_camera-48px" android:title="Camera" app:showAsAction="ifRoom"/>
+    <item android:id="@+id/video" android:enabled="true" android:icon="@drawable/videocam-48px" android:title="Video" app:showAsAction="ifRoom"/>
+    <item android:id="@+id/qrcode" android:enabled="true" android:icon="@drawable/qr_code-48px" android:title="QR-Code" app:showAsAction="ifRoom"/>
+
+</menu>

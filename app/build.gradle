@@ -1,0 +1,46 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.abungo.camerax"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+	buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+	// NOTE: CodeAssist does NOT support adding dependencies here, 
+	// use the library manager instead
+	implementation "androidx.appcompat:appcompat:1.7.0-alpha01"
+	implementation "com.google.android.material:material:1.8.0-rc01"
+	
+	
+    implementation "androidx.camera:camera-core:1.2.2"
+    implementation "androidx.camera:camera-camera2:1.2.2"
+    implementation "androidx.camera:camera-lifecycle:1.2.2"
+    implementation "androidx.camera:camera-video:1.2.2"
+    implementation "androidx.camera:camera-view:1.2.2"
+    implementation "androidx.camera:camera-extensions:1.2.2"
+	implementation 'pub.devrel:easypermissions:3.0.0'
+
+}

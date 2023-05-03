@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AA222222"
+    tools:context=".MainActivity" >
+
+    <FrameLayout
+        android:id="@+id/fl1"
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:layout_alignParentTop="true"
+        android:background="#333333" />
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+		android:layout_below="@id/fl1"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bnv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FF111111"
+        android:paddingBottom="15dip"
+        android:paddingTop="10dip" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/zoom_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rl2"
+        android:layout_marginHorizontal="30dip" />
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bnv1"
+        android:background="@drawable/sheet_bg"
+        android:paddingBottom="25dip"
+        android:paddingTop="25dip" >
+
+        <ImageButton
+            android:id="@+id/shutter_btn"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_centerInParent="true"
+            android:background="?android:selectableItemBackground"
+            android:padding="10dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/capture_button_video"
+            android:tag="camera" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/flipcam"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:background="@drawable/flip_camera_ios-48px"
+            android:padding="10dip"
+            android:tag="back" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/gallery"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/gallery-24px"
+            android:onClick="openGallery"
+            android:padding="10dip" />
+    </RelativeLayout>
+
+</RelativeLayout>

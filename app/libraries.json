@@ -1,0 +1,56 @@
+[
+  {
+    "artifactId": "easypermissions",
+    "excludes": [],
+    "groupId": "pub.devrel",
+    "versionName": "3.0.0"
+  },
+  {
+    "artifactId": "camera-core",
+    "excludes": [],
+    "groupId": "androidx.camera",
+    "versionName": "1.2.2"
+  },
+  {
+    "artifactId": "camera-camera2",
+    "excludes": [],
+    "groupId": "androidx.camera",
+    "versionName": "1.2.2"
+  },
+  {
+    "artifactId": "camera-lifecycle",
+    "excludes": [],
+    "groupId": "androidx.camera",
+    "versionName": "1.2.2"
+  },
+  {
+    "artifactId": "camera-video",
+    "excludes": [],
+    "groupId": "androidx.camera",
+    "versionName": "1.2.2"
+  },
+  {
+    "artifactId": "camera-view",
+    "excludes": [],
+    "groupId": "androidx.camera",
+    "versionName": "1.2.2"
+  },
+  {
+    "artifactId": "camera-extensions",
+    "excludes": [],
+    "groupId": "androidx.camera",
+    "versionName": "1.2.2"
+  },
+  {
+    "artifactId": "appcompat",
+    "excludes": [],
+    "groupId": "androidx.appcompat",
+    "versionName": "1.7.0-alpha01"
+  },
+  {
+    "artifactId": "material",
+    "excludes": [],
+    "groupId": "com.google.android.material",
+    "versionName": "1.8.0-rc01"
+  }
+]
